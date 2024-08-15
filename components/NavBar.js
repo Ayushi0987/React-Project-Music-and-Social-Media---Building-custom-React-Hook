@@ -10,13 +10,13 @@ export default function NavBar() {
     const router = useRouter();
     const musicQuery = router.query.music;
 
-    const isRoot = router.pathname === '/';
-
     const [musicSearch, setMusicSearch] = useState(musicQuery);
+
+    const isRoot = router.pathname === '/';
 
     const musicQuerySearch = useDebounce(musicSearch, 1000);
 
-    function handleSearch(){
+    function handleSearch(musicQuerySearch){
         setMusicSearch(musicQuerySearch);
     }
 

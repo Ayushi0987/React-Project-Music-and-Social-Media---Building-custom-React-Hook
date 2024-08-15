@@ -11,7 +11,7 @@ export default function MusicList() {
   const [musicList, setMusicList] = useState([]);
   const router = useRouter();
   const musicQuery = router.query.music;
-  
+
   async function getMusicList() {
     try {
       const response = await fetch(`${BASE_API_PATH}/api/v1/music/song`, {
@@ -31,7 +31,8 @@ export default function MusicList() {
 
   async function getSearchedMusic() {
     try {
-      const response = await fetch(`${BASE_API_PATH}/api/v1/music/song?search={"title": ${musicQuery}}`, {
+      const sample = {title: musicQuery}
+      const response = await fetch(`${BASE_API_PATH}/api/v1/music/song?search=${JSON.stringify(sample)}`, {
         method: 'GET',
         headers: {
           "content-type": "application/json",
@@ -39,13 +40,18 @@ export default function MusicList() {
         },
       });
       if(!response.ok){
-        throw new Error('Not Found')
+        setMusicList([]);
+        return;
       }
       const data = await response.json();
-      setMusicList(data.data)
+      console.log(data);
+      if(data?.data){
+        setMusicList(data.data);
+      } 
     }
     catch (err) {
       console.error(err);
+      setMusicList([]);
     }
   }
   
