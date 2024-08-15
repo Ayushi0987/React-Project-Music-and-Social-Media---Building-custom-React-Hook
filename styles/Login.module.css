@@ -1,0 +1,11 @@
+.login{
+    flex-direction: column;
+    row-gap: 4px;
+    align-items: center;
+}
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    width: 40%;
+    
+}

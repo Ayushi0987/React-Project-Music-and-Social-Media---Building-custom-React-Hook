@@ -1,0 +1,16 @@
+.musicPlayer{
+    min-height: 150px;
+    height: 2vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.musicData{
+    flex-direction: column;
+}
+.musicImgBox{
+    height: 80px;
+}
+.musicImgBox > img{
+    height: inherit;
+}

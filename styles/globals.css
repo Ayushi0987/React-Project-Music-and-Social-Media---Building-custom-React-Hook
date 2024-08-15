@@ -105,3 +105,11 @@ a {
     color-scheme: dark;
   }
 }
+
+.flex{
+  display: flex;
+}
+
+.rhap_main{
+  flex-direction: row;
+}
