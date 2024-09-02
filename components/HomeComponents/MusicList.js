@@ -63,7 +63,7 @@ export default function MusicList() {
   },[musicQuery])
 
   return (
-    <>
+    <div className='musicListContainer'>
       {musicList.map((musicInfo) => {
         return (
           <Card 
@@ -74,6 +74,6 @@ export default function MusicList() {
             musicInfo = {musicInfo} />
         )
       })}
-    </>
+    </div>
   )
 }

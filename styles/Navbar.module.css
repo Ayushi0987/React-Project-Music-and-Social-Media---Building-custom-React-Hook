@@ -1,7 +1,6 @@
 .container{
     padding: 0 10%;
 }
-
 .navbar{
     justify-content: space-around;
     color: white;
@@ -9,6 +8,8 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 1.25rem;
+    position: fixed;
+    width: 100%;
 }
 
 .nav > ul{
@@ -19,9 +20,3 @@
     list-style: none;
     column-gap: 4px;
 }
-
-/* .searchPanel > input{
-    min-height: 30px;
-    min-width: 20%;
-    background-color: white;
-} */

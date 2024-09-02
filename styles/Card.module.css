@@ -1,0 +1,11 @@
+.imgBox{
+    width: 180px;
+}
+.imgBox > img{
+    width: inherit;
+    border-radius: 10px;
+}
+.content{
+    width: 180px;
+    text-align: center;
+}

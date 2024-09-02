@@ -1,16 +1,15 @@
 .musicPlayer{
-    min-height: 150px;
-    height: 2vh;
     position: fixed;
     bottom: 0;
     width: 100%;
     background-color: orangered;
+    align-items: center;
 }
 .musicData{
     flex-direction: column;
 }
 .musicImgBox{
-    height: 80px;
+    height: 55px;
 }
 .musicImgBox > img{
     height: inherit;

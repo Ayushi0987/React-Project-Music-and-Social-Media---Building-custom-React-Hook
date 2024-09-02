@@ -129,3 +129,15 @@ social posts
 .socialPosts > div{
   margin-bottom: 12px;
 }
+
+/*
+  music List 
+*/
+.musicListContainer{
+  padding-top: 70px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 90px;
+}
