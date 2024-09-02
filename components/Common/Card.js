@@ -14,4 +14,4 @@ export default function Card({ img, songTitle, artistName, musicInfo }) {
       </div>
     </div>
   )
-}
+} 

@@ -113,3 +113,19 @@ a {
 .rhap_main{
   flex-direction: row;
 }
+
+/*
+social posts
+*/
+.socialPostsContainer{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.socialPosts{
+  max-width: 500px;
+}
+.socialPosts > div{
+  margin-bottom: 12px;
+}

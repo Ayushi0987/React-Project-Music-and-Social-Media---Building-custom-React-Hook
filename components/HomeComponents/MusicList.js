@@ -5,8 +5,6 @@ import { useRouter } from 'next/router';
 
 const {BASE_API_PATH, PROJECT_ID} = constants;
 
-
-
 export default function MusicList() {
   const [musicList, setMusicList] = useState([]);
   const router = useRouter();
@@ -20,7 +18,7 @@ export default function MusicList() {
           "content-type": "application/json",
           "projectId": PROJECT_ID
         },
-      });
+      }); 
       const data = await response.json();
       setMusicList(data.data)
     }
