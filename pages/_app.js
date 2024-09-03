@@ -11,7 +11,9 @@ export default function App({ Component, pageProps }) {
     <AuthProvider>
       <MusicProvider>
         <NavBar />
-        <Component {...pageProps} />
+        <div style={{paddingTop: "70px", paddingBottom: "80px"}}>
+            <Component {...pageProps} />
+        </div>
         <MusicPlayer />
       </MusicProvider>
     </AuthProvider>
